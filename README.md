@@ -16,7 +16,7 @@ Install environment:
 $ conda create -n humannerf python=3.8
 $ conda activate humannerf
 $ pip install torch==1.10.1+cu113 torchvision==0.11.2+cu113 torchaudio==0.10.1+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html
-$ pip install pytorch-lightning==1.3.5 imageio pillow scikit-image opencv-python configargparse lpips kornia warmup_scheduler matplotlib test-tube imageio-ffmpeg
+$ pip install imageio pillow scikit-image opencv-python configargparse lpips kornia warmup_scheduler matplotlib test-tube imageio-ffmpeg
 ```
 ## Training
 Please see each subsection for training or inference on different componenments. Available training datasets:
@@ -33,7 +33,7 @@ $ python train_net.py configs/config.yml --gpu 0
 ```
 ## Testing
 
-### Training nerf model
+### Testing nerf model
 Run
 
 ```sh
@@ -41,7 +41,7 @@ $ cd tools
 $ python render.py ${DATA_DIR} --output ${OUTPU_DIR} --render nerf --gpu 0
 ```
 
-### Training texture blending model
+### Testing texture blending model
 Run
 
 ```sh
