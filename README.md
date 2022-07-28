@@ -5,7 +5,7 @@
 A pytorch implementation of **HumanNeRF** (CVPR2022), as described in [_HumanNeRF : Efficiently Generated Human Radiance Field from Sparse Inputs_](https://openaccess.thecvf.com/content/CVPR2022/papers/Zhao_HumanNeRF_Efficiently_Generated_Human_Radiance_Field_From_Sparse_Inputs_CVPR_2022_paper.pdf).
 
 > __HumanNeRF : Efficiently Generated Human Radiance Field from Sparse Inputs__  
-> [Fuqiang Zhao](https://tom94.net), Wei Yang, [Jiakai Zhang](https://jiakai-zhang.github.io/), Pei Lin, Yingliang Zhang, [Jingyi Yu](http://www.yu-jingyi.com/), [Lan Xu](http://xu-lan.com/)  
+> [Fuqiang Zhao](https://zhaofuq.github.io/), Wei Yang, [Jiakai Zhang](https://jiakai-zhang.github.io/), Pei Lin, Yingliang Zhang, [Jingyi Yu](http://www.yu-jingyi.com/), [Lan Xu](http://xu-lan.com/)  
 > __[Project page](https://zhaofuq.github.io/humannerf/)&nbsp;/ [Paper](https://openaccess.thecvf.com/content/CVPR2022/papers/Zhao_HumanNeRF_Efficiently_Generated_Human_Radiance_Field_From_Sparse_Inputs_CVPR_2022_paper.pdf)&nbsp;/ [Video](https://youtu.be/CKeXnQiLCd4)&nbsp;/ [Data](https://drive.google.com/drive/folders/1P3OyAjTNh1V74OSPf0JJ1OnF-E6oklKB?usp=sharing)__
 
 ## Installation
