@@ -1,0 +1,68 @@
+SOLVER:
+  OPTIMIZER_NAME: "Adam"
+  BASE_LR: 0.0004
+  WEIGHT_DECAY: 0.000001
+  IMS_PER_BATCH: 5400
+  START_ITERS: 3000
+  END_ITERS: 60000
+  LR_SCALE: 0.03
+  WARMUP_ITERS: 1000
+
+  MAX_EPOCHS: 100
+  CHECKPOINT_PERIOD: 3000
+  LOG_PERIOD: 30
+  COARSE_STAGE: 0
+  SCALE: 1
+  PSNR: 50.0
+
+  USE_EMPTY_LOSS: True
+
+INPUT:
+
+  SIZE_TRAIN: [1080 ,1080]
+  SIZE_TEST: [540 ,540] 
+
+DATASETS:
+
+  TRAIN: "/data/new_disk/zhaofq/CVPR2022/datasets/kinect"
+
+  DATASET_NAME: "MultiNeRF"
+  START_FRAME: 0
+  NUM_FRAME: 1
+  CANONICAL_FRAME: 0
+  SKIP: 1
+  SHIFT: 0.0
+  MAXRATION: 0.0
+  ROTATION: 0.0
+  USE_MASK: False
+  USE_DEPTH_PROXY: False
+  USE_CAMPOSE: False
+  USE_BACKGROUND: False
+  USE_SKELETON: True
+
+  MASK_SAMPLING: True
+  SPLIT_RAYS: False
+  FINETUNE: False
+
+MODEL: 
+  COARSE_RAY_SAMPLING: 32
+  FINE_RAY_SAMPLING: 64
+  SAMPLE_METHOD: "BBOX"       #  "NEAR_FAR"     "BBOX"    "DEPTH"
+  BOARDER_WEIGHT: 1e10
+  SAME_SPACENET: True
+  RENDER: "DEFAULT"           # "v1", "v2", "atten", "default"
+  TKERNEL_INC_RAW: True 
+  MODEL_PRETRAINED: "/data/new_disk/zhaofq/CVPR2022/datasets/kinect"
+
+  USE_DIR: True
+  USE_DEFORM: True
+  USE_IDENTITY: True
+
+  FEATURE_DIM: 32
+  SKELETON_DIM: 72 #72
+
+TEST:
+  IMS_PER_BATCH: 1
+
+OUTPUT_DIR: "/data/new_disk/zhaofq/CVPR2022/outputs/kinect/multiscene"
+
